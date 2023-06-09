@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #root{
+            color: yellow;
+        }
+
+        .text {
+            color: green;
+        }
+
+        p {
+            color: red;
+        }
+
+        /* 优先级的值是可以合并的 */
+
+        .box .title{
+            color: yellow;
+        }
+
+        .title{
+            color: red;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <p style="color: violet;" class="text" id="root">我是元素</p>
+
+    <div class="box">
+        <h3 class="title">我是标题</h3>
+    </div>
+
+</body>
+
+</html>

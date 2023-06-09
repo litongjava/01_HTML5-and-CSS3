@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 
+            关于前缀的说明：
+                组织：W3C,制定规则：HTML5+CSS3  标准
+                解决问题：
+                    添加前缀：-ms- -moz- -webkit-
+                到目前为止，大家基本上不需要考虑这个问题，因为新基本上都遵循了W3C的标准
+        */
+
+        .box{
+            display: flex;
+            display: -ms-flex;
+            display: -moz-flex;
+            display: -webkit-flex;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>

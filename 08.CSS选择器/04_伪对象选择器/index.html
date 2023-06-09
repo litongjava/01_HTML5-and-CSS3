@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+ul::before {
+  content: "我是前面的内容";
+  color: red;
+  font-size: 30px;
+}
+
+ul::after {
+  content: "我是后面的内容";
+  color: green;
+  font-size: 12px;
+}
+
+h3::before {
+  content: "";
+  padding-left: 5px;
+  background: red;
+}
+
+h3::after {
+  content: "";
+  padding-right: 5px;
+  background: green;
+}
+</style>
+</head>
+
+<body>
+
+<ul>
+  <li>列表1</li>
+  <li>列表2</li>
+  <li>列表3</li>
+</ul>
+
+<h3>我是标题</h3>
+
+</body>
+
+</html>

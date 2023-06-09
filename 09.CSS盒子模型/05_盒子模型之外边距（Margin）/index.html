@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        盒子模型组成部分：
+            1. 内容区域Content
+                1. 默认大小，由内容本身大小撑开
+                2. 手动设置，width和height属性完成盒子大小的设计
+            2. 内边距Padding
+                边框与内容之间的空白区就是内边距
+                1. 填充值：px(推荐)、百分比
+                2. 注意事项：内边距会成大容器自身
+            3. 边框Border
+                1. 边框样式：border-style:solid/double/dashed/dotted
+                2. 边框宽度：boder-width
+                3. 边框颜色：border-color
+                4. 圆角效果：border-radius
+            4. 外边距Margin
+                外边距就是来定义元素周围的空间
+                1.取值：
+                    1. auto：能容盒子左右居中
+                    2. 像素：具体的像素单位
+                    3. 百分比：直接设置
+                2. 注意事项：垂直方向上，边距相撞，取大值
+     -->
+     <style>
+
+
+        .box1{
+            width: 200px;
+            height: 200px;
+            background: red;
+            margin: 10px;
+        }
+
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: green;
+            margin: 10px;
+        }
+
+     </style>
+</head>
+<body>
+
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

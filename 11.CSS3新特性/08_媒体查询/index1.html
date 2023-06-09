@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+body {
+  background-color: red;
+}
+
+
+/* 
+max-width:最大宽度
+min-width:最小宽度
+关于设备分辨率问题：
+1. 苹果手机双倍分辨率
+2. 安卓手机三倍分辨率
+*/
+
+@media screen and (max-width:768px) {
+  /* 小于768：手机屏幕 */
+  body {
+    background-color: red;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  /* 平板：pad */
+  body {
+    background-color: green;
+  }
+}
+
+@media screen and (min-width:992px) {
+  /* 电脑 */
+  body {
+    background-color: indianred;
+  }
+}
+</style>
+</head>
+
+<body>
+
+</body>
+
+</html>

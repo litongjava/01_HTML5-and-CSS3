@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- 
+        盒子模型组成部分：
+            1. 内容区域Content
+                1. 默认大小，由内容本身大小撑开
+                2. 手动设置，width和height属性完成盒子大小的设计
+            2. 内边距Padding
+                边框与内容之间的空白区就是内边距
+                1. 填充值：px(推荐)、百分比
+            3. 边框Border
+                1. 边框样式：border-style:solid/double/dashed/dotted
+                2. 边框宽度：boder-width
+                3. 边框颜色：border-color
+                4. 圆角效果：border-radius
+            4. 外边距Margin
+     -->
+
+<style>
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: cadetblue;
+  /* border-style: solid;
+            border-width: 20px;
+            border-color: red; */
+  /* border-top: 20px solid red;
+            border-left: 10px double red;
+            border-bottom: 20px dashed red;
+            border-right: 20px dotted red; */
+  border: 20px solid green;
+  border-radius: 30px;
+}
+
+.title {
+  border-left: 5px solid #254282;
+  color: #254282;
+  padding-left: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box"></div>
+
+<h3 class="title">国内图片</h3>
+
+</body>
+
+</html>

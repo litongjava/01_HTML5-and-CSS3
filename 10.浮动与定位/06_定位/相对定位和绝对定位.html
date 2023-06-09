@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+/* 
+            1. 固定定位是相对文档定位的
+            2. 相对定位和绝对定位是相对于具有定位的父级元素定位的，如果父级元素没有定位
+                则继续向上寻找具有定位的元素，如果都没有，则相对文档定位
+        */
+
+.container {
+  width: 400px;
+  height: 400px;
+  background-color: #333;
+  position: absolute;
+  left: 150px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  /*position: fixed;*/
+  /*position: relative;*/
+  position: absolute;
+  left: 100px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="box"></div>
+</div>
+
+</body>
+
+</html>

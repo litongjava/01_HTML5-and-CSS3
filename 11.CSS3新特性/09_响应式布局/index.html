@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f1f1;
+}
+
+.nav {
+  width: 100%;
+  height: 50px;
+  background-color: #555;
+  line-height: 50px;
+}
+
+.list {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.nav ul {
+  list-style: none;
+  overflow: hidden;
+  clear: both;
+  float: left;
+}
+
+.nav ul li {
+  float: left;
+  padding: 0 20px;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+.select {
+  background-color: #333;
+}
+
+.nav .search {
+  float: right;
+}
+
+.nav .search input {
+  width: 200px;
+  height: 30px;
+  border-radius: 50px;
+  padding-left: 10px;
+  border: 0;
+}
+</style>
+<style>
+/* 
+手机：<768
+平板：>768  <992
+小屏幕： >992  <1240
+大屏幕： >1240
+*/
+
+@media screen and (max-width:768px) {
+  .search {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .search {
+    display: block;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="nav">
+    <div class="list">
+      <ul>
+        <li class="select">
+          <a href="#">首页</a>
+        </li>
+        <li>
+          <a href="#">电脑</a>
+        </li>
+        <li>
+          <a href="#">手机</a>
+        </li>
+        <li>
+          <a href="#">电视</a>
+        </li>
+      </ul>
+      <div class="search">
+        <input type="text" placeholder="手机">
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        type属性
+            1. text
+            2. password
+            3. radio
+            4. checkbox
+            5. file
+            6. submit
+            7. reset
+            8. button
+            9. image
+            10. 下拉列表
+        11. textarea
+        12. label
+     -->
+
+    <form>
+        <select>
+            <option>请选择学习内容</option>
+            <option>Java</option>
+            <option>Web前端</option>
+            <option>Python</option>
+        </select>
+    </form>
+
+    <form>
+        <select>
+            <optgroup label="学习">
+                <option>Java</option>
+                <option>Web前端</option>
+                <option>Python</option>
+            </optgroup>
+            <optgroup label="娱乐">
+                <option>游戏</option>
+                <option>电影</option>
+                <option>游玩</option>
+            </optgroup>
+        </select>
+    </form>
+
+    <form>
+        <input type="text">
+        <textarea cols="30" rows="10"></textarea>
+    </form>
+
+    <form>
+        <label for="username">用户名：</label>
+        <input type="text" name="username" id="username">
+    </form>
+    
+</body>
+</html>

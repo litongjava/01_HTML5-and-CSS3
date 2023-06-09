@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- 
+        选择器分类：
+            1. 基础选择器
+            2. 关系选择器
+            3. 伪类选择器
+            4. 伪元素选择器(伪对象选择器)
+            5. 属性选择器
+     -->
+
+<style>
+a[target] {
+  color: red;
+}
+
+p[class] {
+  color: green;
+}
+</style>
+</head>
+
+<body>
+
+<a href="#" target="_blank">带有target属性</a>
+<a href="#">不带有target属性</a>
+
+<p class="text">我具有text</p>
+<p>我不具有text</p>
+
+</body>
+
+</html>

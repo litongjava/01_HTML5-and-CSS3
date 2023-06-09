@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  /* 将元素隐藏掉 */
+  display: none;
+}
+
+.text {
+  width: 300px;
+  height: 100px;
+  background-color: red;
+  /* 修改为块级元素 */
+  display: block;
+}
+
+.title {
+  background-color: green;
+  /* 修改为行内元素 */
+  display: inline;
+}
+
+span {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  /* 行内块级元素 */
+  display: inline-block;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box"></div>
+
+<a class="text" href="#">超链接</a>
+<a class="text" href="#">超链接</a>
+
+<h1 class="title">我是一级标题</h1>
+
+<span>内容1</span>
+<span>内容2</span>
+</body>
+
+</html>

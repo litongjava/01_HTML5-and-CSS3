@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<!-- 
+
+        盒子模型分类：
+            1. 标准盒子模型
+            2. 怪异盒子模型
+            3. 弹性盒子模型（CSS3新特性）
+
+        CSS有两个大的版本：
+            1. CSS2
+            2. CSS3：圆角效果、弹性盒子模型
+
+            注意事项：CSS3可能会存在兼容性问题
+     -->
+
+<!-- 
+        弹性盒子模型：
+            1. 开启弹性盒子模型：在父容器中添加：display:flex;
+            2. 父元素属性
+                1. 开启：display:flex;
+                2. flex-direction:子元素方向
+                    1. row：默认值，横向摆放
+                    2. row-reverse：横向摆放，内容反转，靠右对齐
+                    3. column：纵向摆放
+                    4. column-reverse：纵向摆放，内容反转，靠下对齐
+                3. justify-content: 水平对齐调整
+                    1. flex-start：默认值，靠左对齐
+                    2. flex-end：靠右对齐
+                    3. center：左右居中
+                    4. space-between：左右对齐
+                    5. space-around：左右对齐，但是盒子会在区域内居中
+                4. align-items:垂直对齐调整
+                    1. flex-start：默认值，上对齐
+                    2. flex-end：下对齐
+                    3. center：居中
+
+            3. 子元素属性
+                flex-grow：权重
+                    1. flex: 数值
+                    注意事项：宽度不在生效，宽度的权重比flex低
+
+
+      -->
+
+<style>
+.container {
+  width: 500px;
+  height: 500px;
+  background: #999;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.container div {
+  width: 100px;
+  height: 100px;
+}
+
+.box1 {
+  background: red;
+  flex: 2;
+}
+
+.box2 {
+  background: green;
+  flex: 1;
+}
+
+.box3 {
+  background: blue;
+  flex: 7;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="box1">box1</div>
+  <div class="box2">box2</div>
+  <div class="box3">box3</div>
+</div>
+
+</body>
+
+</html>

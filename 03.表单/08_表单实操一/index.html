@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <table border="1" cellspacing="0" align="center" width="500" height="300">
+        <tr align="center">
+            <td colspan="4">教员搜索</td>
+        </tr>
+        <tr>
+            <td>搜索类型</td>
+            <td>
+                <form>
+                    <select>
+                        <option value="title">选择教员信息</option>
+                        <option value="java">java</option>
+                        <option value="web">web</option>
+                        <option value="python">python</option>
+                    </select>
+                </form>
+            </td>
+            <td>教员身份</td>
+            <td>
+                <form>
+                    <select>
+                        <option value="title">教员身份</option>
+                        <option value="g">高级讲师</option>
+                        <option value="z">中级讲师</option>
+                        <option value="c">初级讲师</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>所在地区</td>
+            <td>
+                <form>
+                    <select>
+                        <option value="title">不限</option>
+                        <option value="beijing">北京</option>
+                        <option value="shanghai">上海</option>
+                        <option value="taiyuan">太原</option>
+                    </select>
+                </form>
+            </td>
+            <td>性别</td>
+            <td>
+                <form>
+                    <input type="radio" name="sex" value="nan">男
+                    <br>
+                    <input type="radio" name="sex" value="nv">女
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>学习科目</td>
+            <td colspan="3">
+                <form>
+                    <select>
+                        <option value="title">请在下列列表中选择</option>
+                        <option value="beijing">java</option>
+                        <option value="shanghai">web</option>
+                        <option value="taiyuan">python</option>
+                    </select>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>学习</td>
+            <td colspan="3">
+                <form>
+                    <input type="text" placeholder="请输入要学习的内容">
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>专业</td>
+            <td colspan="3">
+                <form>
+                    <input type="search" placeholder="请输入所学专业">
+                    <input type="submit" value="搜索">
+                </form>
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
